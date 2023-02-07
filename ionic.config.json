@@ -1,0 +1,7 @@
+{
+  "name": "Cabify",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
