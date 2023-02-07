@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  apiKeyGoogle: "AIzaSyCO2iJoFYgbl9IJlFv9hEhFd9VUxLzfO-I"
 };
