@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  apiKeyGoogle: process.env.API_KEY_GOOGLE
+  API_KEY_GOOGLE: process.env.API_KEY_GOOGLE,
 };

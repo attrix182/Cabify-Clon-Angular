@@ -19,7 +19,7 @@ export class GoogleMapsComponent implements OnInit {
   geocoder: google.maps.Geocoder;
   adressName = 'Ubicación actual';
   searchInput: HTMLInputElement;
-  loader = new Loader({ apiKey: environment.apiKeyGoogle, version: 'weekly', libraries: ['places'] });
+  loader = new Loader({ apiKey: environment.API_KEY_GOOGLE, version: 'weekly', libraries: ['places'] });
   actualPosition = { lat: -34.6154611, lng: -58.5733849 } as google.maps.LatLngLiteral;
   initialZoom = 10;
 
