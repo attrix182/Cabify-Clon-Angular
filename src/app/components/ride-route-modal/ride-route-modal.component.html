@@ -1,0 +1,49 @@
+<ion-content>
+  <section class="header-modal">
+    <div class="text">
+      <div class="greeting">Hello, User!</div>
+      <div class="intro">Where should we take you?</div>
+    </div>
+    <div class="icon">
+      <img src="../../../assets/icon/modal-car-icon.png" height="50px" alt="" />
+    </div>
+  </section>
+
+  <div class="header-actions">
+    <div class="searcher">
+      <ion-button (click)="enterRoute()" color="input-gray">
+        <ion-icon slot="start" name="search"></ion-icon>
+        <span>&nbsp; &nbsp; Enter your route</span> </ion-button
+      >
+    </div>
+    <div class="reserve-btn">
+      <ion-button color="input-gray">
+        <ion-icon slot="start" name="calendar"></ion-icon>
+        Reserve</ion-button
+      >
+    </div>
+  </div>
+
+  <ion-list lines="none" style="margin-top: 10px;">
+    <ion-item>
+      <div style="margin-right: 15px;">
+        <img src="../../../assets/icon/work-icon.png" height="45px" alt="">
+      </div>
+      <ion-label class="text-item-work">
+        <h2>Work</h2>
+        <p>Add as favorite</p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <div style="margin-right: 15px;">
+        <img src="../../../assets/icon/favorite-active-icon.png" height="45px" alt="">
+      </div>
+      <ion-label class="text-item-favorite">
+        <h2>Av 9 de Julio 92</h2>
+        <p>Avenida 9 de Julio 92, CABA</p>
+      </ion-label>
+    </ion-item>
+
+  </ion-list>
+</ion-content>

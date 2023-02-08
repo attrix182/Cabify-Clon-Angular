@@ -20,6 +20,7 @@
 
   .icon {
     padding: 5px;
+    margin: 4px;
     height: 84px;
     align-items: flex-end;
     justify-content: flex-end;
@@ -36,18 +37,12 @@
   .searcher {
     width: 100vw;
     ion-button {
-      width: 96%;
+      width: 100%;
       span{
         text-align:left;
         width:100%;
       }
     }
-  }
-  .reserve-btn {
-    ion-button {
-      width: 100%;
-    }
-
   }
   ion-button{
     height: 6.8vh;

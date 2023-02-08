@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { RideModalItemComponent } from './ride-modal-item.component';
+import { RideRouteModalComponent } from './ride-route-modal.component';
 
-describe('RideModalItemComponent', () => {
-  let component: RideModalItemComponent;
-  let fixture: ComponentFixture<RideModalItemComponent>;
+describe('RideRouteModalComponent', () => {
+  let component: RideRouteModalComponent;
+  let fixture: ComponentFixture<RideRouteModalComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ RideModalItemComponent ],
+      declarations: [ RideRouteModalComponent ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(RideModalItemComponent);
+    fixture = TestBed.createComponent(RideRouteModalComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

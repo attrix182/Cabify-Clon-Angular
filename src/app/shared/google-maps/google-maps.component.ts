@@ -3,11 +3,14 @@ import { Loader } from '@googlemaps/js-api-loader';
 import { environment } from 'src/environments/environment';
 import { Geolocation } from '@capacitor/geolocation';
 import { MapaStyle } from 'src/app/shared/MapaStyle';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-google-maps',
   templateUrl: './google-maps.component.html',
-  styleUrls: ['./google-maps.component.scss']
+  styleUrls: ['./google-maps.component.scss'],
+  imports: [CommonModule],
+  standalone: true
 })
 export class GoogleMapsComponent implements OnInit {
   @Input() viewOnly = false;

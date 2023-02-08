@@ -8,23 +8,23 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'tab1',
-        loadChildren: () => import('../RideTab/rideTab.module').then(m => m.RideTabPageModule)
+        path: 'ride',
+        loadChildren: () => import('../tabs/RideTab/rideTab.module').then(m => m.RideTabPageModule)
       },
       {
-        path: 'tab2',
-        loadChildren: () => import('../tab2/tab2.module').then(m => m.Tab2PageModule)
+        path: 'delivery',
+        loadChildren: () => import('../tabs/DeliveryTab/deliveryTab.module').then(m => m.DeliveryTabPageModule)
       },
       {
         path: '',
-        redirectTo: '/tabs/tab1',
+        redirectTo: '/tabs/ride',
         pathMatch: 'full'
       }
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/tab1',
+    redirectTo: '/tabs/ride',
     pathMatch: 'full'
   }
 ];
