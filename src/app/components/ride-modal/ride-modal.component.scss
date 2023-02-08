@@ -58,3 +58,38 @@
     --ion-color-contrast: var(--ion-color-text-principal);
   }
 }
+
+
+.text-item-work{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  h2{
+    font-size: 1.1em;
+    font-weight: 400;
+    color: var(--ion-color-text);
+  }
+  p{
+    font-size: 0.9em;
+    font-weight: 500;
+    color: var(--ion-color-text-link);
+  }
+}
+
+.text-item-favorites{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  h2{
+    font-size: 1.1em;
+    font-weight: 400;
+    color: var(--ion-color-text);
+  }
+  p{
+    font-size: 0.9em;
+    font-weight: 500;
+    color: var(--ion-color-text-principal);
+  }
+}

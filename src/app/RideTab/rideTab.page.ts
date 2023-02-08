@@ -26,6 +26,7 @@ export class rideTabPage implements AfterContentInit {
       backdropDismiss: false,
       backdropBreakpoint: 0,
       showBackdrop: false,
+      cssClass: 'custom-modal'
     });
 
     await modal.present();
