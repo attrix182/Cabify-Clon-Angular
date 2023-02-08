@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
 
 @Component({
   selector: 'app-ride-modal',
@@ -7,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RideModalComponent implements OnInit {
 
-  constructor() { }
+  constructor(private modalCtrl:ModalController) { }
 
   ngOnInit() {}
+
+  enterRoute(){
+    this.modalCtrl.dismiss();
+  }
 
 }

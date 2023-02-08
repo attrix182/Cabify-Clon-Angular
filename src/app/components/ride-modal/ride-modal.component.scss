@@ -1,0 +1,60 @@
+.header-modal {
+  display: flex;
+
+  .text {
+    flex-wrap: wrap;
+    width: 100vw;
+    display: flex;
+    padding: 20px;
+    .greeting {
+      color: var(--ion-color-text-principal);
+      font-weight: 500;
+    }
+
+    .intro {
+      margin-top: 0.8em;
+      color: var(--ion-color-text-dark);
+      font-weight: 300;
+      font-weight: 800;
+    }
+  }
+
+  .icon {
+    padding: 5px;
+    height: 84px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 35vw;
+    display: flex;
+  }
+}
+
+.header-actions {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 13px 0px 13px;
+  width: 100vw;
+  .searcher {
+    width: 100vw;
+    ion-button {
+      width: 96%;
+      span{
+        text-align:left;
+        width:100%;
+      }
+    }
+  }
+  .reserve-btn {
+    ion-button {
+      width: 100%;
+    }
+
+  }
+  ion-button{
+    height: 6.8vh;
+  }
+
+  ion-button::part(native) {
+    --ion-color-contrast: var(--ion-color-text-principal);
+  }
+}

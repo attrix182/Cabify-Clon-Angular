@@ -26,5 +26,16 @@
 @import '~@ionic/angular/css/flex-utils.css';
 
 ion-modal {
-  bottom: 11vh;
+  bottom: calc(11vh + env(safe-area-inset-bottom));
 }
+
+ion-searchbar {
+  .searchbar-input-container {
+      input{
+          font-size: 20px !important;
+          height: 200px;
+      }
+  }
+}
+
+

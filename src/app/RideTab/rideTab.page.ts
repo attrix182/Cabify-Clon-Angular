@@ -22,9 +22,10 @@ export class rideTabPage implements AfterContentInit {
     const modal = await this.modalCtrl.create({
       component: RideModalComponent,
       initialBreakpoint: 0.5,
-      breakpoints: [0.5, 0.3, 0.8],
-      canDismiss:false,
+      breakpoints: [0.5, 0.25, 0.85],
       backdropDismiss: false,
+      backdropBreakpoint: 0,
+      showBackdrop: false,
     });
 
     await modal.present();
