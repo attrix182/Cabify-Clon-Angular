@@ -3,7 +3,6 @@
 Deploy: https://cabify-clone.netlify.app/
 
 App original:
-![IMG_4832](https://user-images.githubusercontent.com/44885834/217624094-a78928df-2209-4c2a-8e30-0e4516ced884.jpg)
 <img width="372" alt="image" src="https://user-images.githubusercontent.com/44885834/217624094-a78928df-2209-4c2a-8e30-0e4516ced884.jpg">
 
 
