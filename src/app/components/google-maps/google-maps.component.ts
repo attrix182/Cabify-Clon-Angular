@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Loader } from '@googlemaps/js-api-loader';
-import { environment } from 'src/environments/environment';
+import { environment } from 'src/environments/environment-dev';
 import { Geolocation } from '@capacitor/geolocation';
 import { MapaStyle } from 'src/app/shared/MapaStyle';
 
