@@ -1,5 +1,5 @@
 <ion-content>
-  <section class="header-modal">
+<!--   <section class="header-modal">
     <div class="text">
       <div class="greeting">Hello, User!</div>
       <div class="intro">Where should we take you?</div>
@@ -7,21 +7,26 @@
     <div class="icon">
       <img src="../../../assets/icon/modal-car-icon.png" height="50px" alt="" />
     </div>
-  </section>
+  </section> -->
 
   <div class="header-actions">
+
+    <div>
+      <ion-icon slot="times" name="close"></ion-icon>
+    </div>
+
     <div class="searcher">
       <ion-button (click)="enterRoute()" color="input-gray">
         <ion-icon slot="start" name="search"></ion-icon>
         <span>&nbsp; &nbsp; Enter your route</span> </ion-button
       >
-    </div>
-    <div class="reserve-btn">
-      <ion-button color="input-gray">
-        <ion-icon slot="start" name="calendar"></ion-icon>
-        Reserve</ion-button
+
+      <ion-button (click)="enterRoute()" color="input-gray">
+        <ion-icon slot="start" name="search"></ion-icon>
+        <span>&nbsp; &nbsp; Enter your route</span> </ion-button
       >
     </div>
+
   </div>
 
   <ion-list lines="none" style="margin-top: 10px;">

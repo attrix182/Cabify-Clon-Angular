@@ -29,28 +29,34 @@ export class TabsPage implements OnInit {
   async openModal() {
     if(this.actualTab === 'ride') {
       this.modalCtrl.dismiss();
-    const modal = await this.modalCtrl.create({
+this.modalCtrl.create({
       component: RideModalComponent,
       initialBreakpoint: 0.5,
-      breakpoints: [0.5, 0.3, 0.8],
+      breakpoints: [0.5, 0.25, 0.8],
       backdropDismiss: false,
       backdropBreakpoint: 0,
       showBackdrop: false,
-    });
-    await modal.present();
+    }).then(modal => {
+      modal.present();
+    }
+    );
+  
   }
 
   if(this.actualTab == 'delivery'){
     this.modalCtrl.dismiss();
-    const modal = await this.modalCtrl.create({
+   this.modalCtrl.create({
       component: DeliveryModalComponent,
       initialBreakpoint: 0.5,
-      breakpoints: [0.5, 0.3, 0.8],
+      breakpoints: [0.5, 0.25, 0.8],
       backdropDismiss: false,
       backdropBreakpoint: 0,
       showBackdrop: false
-    });
-    await modal.present();
+    }).then(modal => {
+      modal.present();
+    }
+    );
+ 
   }
 
   }
