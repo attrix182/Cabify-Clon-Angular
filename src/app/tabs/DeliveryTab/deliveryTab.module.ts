@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { DeliveryModalComponent } from '../../components/delivery-modal/delivery-modal.component';
 import { DeliveryTabPage } from './deliveryTab.page';
 import { DeliveryTabPageRoutingModule } from './deliveryTab-routing.module';
+import { RoutesListComponent } from 'src/app/components/routes-list/routes-list.component';
 
 @NgModule({
   imports: [
@@ -12,7 +13,9 @@ import { DeliveryTabPageRoutingModule } from './deliveryTab-routing.module';
     CommonModule,
     FormsModule,
     DeliveryTabPageRoutingModule,
+    RoutesListComponent
   ],
-  declarations: [DeliveryTabPage, DeliveryModalComponent]
+  declarations: [DeliveryTabPage, DeliveryModalComponent,
+  ]
 })
 export class DeliveryTabPageModule {}

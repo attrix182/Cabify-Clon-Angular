@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { ModalController } from '@ionic/angular';
+import { TabsService } from 'src/app/tabs/tabs.service';
 import { RideRouteModalComponent } from '../ride-route-modal/ride-route-modal.component';
 @Component({
   selector: 'app-ride-modal',
@@ -8,19 +10,19 @@ import { RideRouteModalComponent } from '../ride-route-modal/ride-route-modal.co
 })
 export class RideModalComponent implements OnInit {
 
-  constructor(private modalCtrl:ModalController) { }
+  constructor(private modalCtrl:ModalController, private tabsSvc:TabsService) { }
 
-  ngOnInit() {}
+  ngOnInit() {
+
+  }
 
   enterRoute(){
+    this.tabsSvc.setVisibilityNavBar(false);
     this.modalCtrl.dismiss();
     this.modalCtrl.create({
       component: RideRouteModalComponent,
-      initialBreakpoint: 1,
-      breakpoints: [1],
-      backdropDismiss: false,
-      backdropBreakpoint: 0,
-      showBackdrop: false,
+      cssClass: 'fullscreen'
+
     }
     ).then(modal => {
       modal.present();

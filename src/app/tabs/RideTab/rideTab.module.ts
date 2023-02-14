@@ -6,9 +6,10 @@ import { rideTabPageRoutingModule } from './rideTab-routing.module';
 import { rideTabPage } from './rideTab.page';
 import { RideModalComponent } from 'src/app/components/ride-modal/ride-modal.component';
 import { RideRouteModalComponent } from 'src/app/components/ride-route-modal/ride-route-modal.component';
+import { RoutesListComponent } from 'src/app/components/routes-list/routes-list.component';
 
 @NgModule({
   declarations: [rideTabPage, RideModalComponent, RideRouteModalComponent],
-  imports: [IonicModule, CommonModule, FormsModule, rideTabPageRoutingModule]
+  imports: [IonicModule, CommonModule, FormsModule, rideTabPageRoutingModule, RoutesListComponent]
 })
 export class RideTabPageModule {}
