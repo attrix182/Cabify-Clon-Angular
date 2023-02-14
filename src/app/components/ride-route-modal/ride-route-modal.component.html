@@ -11,6 +11,7 @@
       <div class="custom-input">
         <div id="first-node" *ngIf="!dragging">
           <div id="first-node-line"></div>
+          <div id="first-node-line-gray"></div>
         </div>
         <div class="icon-inside">
           <ion-reorder>
@@ -25,6 +26,7 @@
       <ion-item lines="none">
         <div class="custom-input">
           <div id="secondary-node">
+            <div id="secondary-node-line-gray"></div>
             <!-- <div id="secondary-node-line"></div> -->
           </div>
           <div class="icon-inside">
@@ -39,7 +41,7 @@
           </button>
 
           <button *ngIf="i > 0" class="btn-add" (click)="removeRoute(route)">
-            <div>-</div>
+            <div>x</div>
           </button>
         </div>
       </ion-item>

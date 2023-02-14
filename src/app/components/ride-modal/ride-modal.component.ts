@@ -13,7 +13,7 @@ export class RideModalComponent implements OnInit {
   constructor(private modalCtrl:ModalController, private tabsSvc:TabsService) { }
 
   ngOnInit() {
-
+    this.enterRoute();
   }
 
   enterRoute(){
