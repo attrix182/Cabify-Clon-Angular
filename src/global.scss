@@ -9,6 +9,8 @@
  * https://ionicframework.com/docs/layout/global-stylesheets
  */
 
+ @import "~leaflet/dist/leaflet.css";
+
 /* Core CSS required for Ionic components to work properly */
 @import '~@ionic/angular/css/core.css';
 
@@ -25,7 +27,9 @@
 @import '~@ionic/angular/css/text-transformation.css';
 @import '~@ionic/angular/css/flex-utils.css';
 
-
+html:not(.hydrated) body {
+  display: none !important;
+}
 
 ion-modal {
   bottom: calc(10.8vh);

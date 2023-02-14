@@ -1,10 +1,8 @@
 <ion-tabs>
   <ion-content style="min-height: 89vh">
-    <app-google-maps></app-google-maps>
+    <app-open-map></app-open-map>
   </ion-content>
-<div style="height: 50vh; background-color: white;" *ngIf="!visibilityNavBar">
-
-</div>
+  <div style="height: 50vh; background-color: white" *ngIf="!visibilityNavBar"></div>
 
   <ion-tab-bar class="tab-bar" slot="bottom" *ngIf="visibilityNavBar">
     <ion-tab-button tab="ride">

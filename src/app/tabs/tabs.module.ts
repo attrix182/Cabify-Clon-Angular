@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { TabsPageRoutingModule } from './tabs-routing.module';
 import { TabsPage } from './tabs.page';
 import { GoogleMapsComponent } from '../shared/google-maps/google-maps.component';
+import { OpenMapComponent } from '../shared/open-map/open-map.component';
 
 @NgModule({
   imports: [
@@ -12,7 +13,8 @@ import { GoogleMapsComponent } from '../shared/google-maps/google-maps.component
     CommonModule,
     FormsModule,
     TabsPageRoutingModule,
-    GoogleMapsComponent
+    GoogleMapsComponent,
+    OpenMapComponent,
   ],
   declarations: [TabsPage]
 })
